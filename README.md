@@ -52,7 +52,7 @@ The evaluation of the model on the test data leads to an accuracy of 72.97%.<br>
 <img width="392" alt="model1_output" src="https://github.com/xoffvsg/deep-learning-challenge/assets/141395221/be23d066-4cf9-43e7-bf2c-e042345607c5">
 <br><br>
 Remark: The accuracy of the model on the training data was almost 74%, which is close enough to the accuracy obtained with the test data to eliminate the concern of model overfitting.
-The notebook is saved as [AlphabetSoupCharity.ipynb](https://github.com/xoffvsg/deep-learning-challenge/blob/main/AlphabetSoupCharity.ipynb) and the model as _AlphabetSoupCharity.h5_
+The notebook is saved as [AlphabetSoupCharity.ipynb](https://github.com/xoffvsg/deep-learning-challenge/blob/main/AlphabetSoupCharity.ipynb) and the model as <i>AlphabetSoupCharity.h5</i>
 
 <br><br>
 
@@ -69,7 +69,7 @@ After running 23m 43s in Colab, the best model found yielded an accuracy of 73.2
 <img width="390" alt="optimization1_output" src="https://github.com/xoffvsg/deep-learning-challenge/assets/141395221/3956ef55-433a-4579-91be-01dc22c78781">
 
 <br>
-The best model is saved as _AlphabetSoupCharity_Optimization.h5_ and the code can be found at the end of the same _AlphabetSoupCharity.ipynb_ notebook.<br>
+The best model is saved as <i></i>AlphabetSoupCharity_Optimization.h5</i> and the code can be found at the end of the same <i></i>AlphabetSoupCharity.ipynb</i> notebook.<br>
 <br>
 
 #### Third Model
@@ -104,7 +104,7 @@ The evaluation of the model on the test data leads to an accuracy of 72.58%, whi
 <img width="394" alt="model3_optimization2_output" src="https://github.com/xoffvsg/deep-learning-challenge/assets/141395221/ff30f30b-c102-4c69-8bcb-6b7ec28faa25">
 
 <br><br>
-The model is saved as _AlphabetSoupCharity_Optimization2.h5_
+The model is saved as <i>AlphabetSoupCharity_Optimization2.h5</i>
 <br>
 <br>
 
@@ -121,7 +121,7 @@ After running 1h 18m 19s in Colab, the best model found yielded an accuracy of 7
 <img width="390" alt="model4_optimization3_output" src="https://github.com/xoffvsg/deep-learning-challenge/assets/141395221/2bccb9a3-006b-4b6e-90b1-a29e789f4f42"> <br>
 
 
-The best model is saved as _AlphabetSoupCharity_Optimization3.h5_
+The best model is saved as <i>AlphabetSoupCharity_Optimization3.h5</i>
 
 #### Fifth Model
 Next, we will explore the effect of the scaling method applied to the last dataset. The reasoning is that the StandardScaler returns normalized values centered around zero (i.e. with negative values), while the Relu and Sigmoid activation functions are between 0 and 1. We will use the MinMaxScaler method that, by construction, yields an output between 0 and 1 too. The notebook is saved under [AlphabetSoupCharity3.ipynb](https://github.com/xoffvsg/deep-learning-challenge/blob/main/AlphabetSoupCharity_Optimization3.ipynb)<br>
@@ -130,7 +130,7 @@ We directly ran the Keras Tuner with the same constrains as for the fourth model
 <img width="393" alt="model5_optimization4_output" src="https://github.com/xoffvsg/deep-learning-challenge/assets/141395221/293dbe67-688b-4a8c-92c1-fe074897b729">
 
 <br>
-The model is saved as as _AlphabetSoupCharity_Optimization4.h5_
+The model is saved as as <i>AlphabetSoupCharity_Optimization4.h5</i> 
 
 #### Sixth Model
 Lastly, we will rerun the Keras Tuner on the same dataset, but with only the activation functions Relu and Sigmoid, and with the max epoch set to 100. The rationales are that the activation layer tanh has not been selected by the previous tuner, that its range is between -1 and 1 while our scaled data is now between 0 and 1, and that it is more computationally onerous because of the exponential transformation. We are also curious to see if increasing the max epoch to 100 will make a significant difference in the result and will be worth the extra computing time. <br>
@@ -139,10 +139,10 @@ After 5h 12m 43s, the tuner identified a set of hyperparameters yielding an accu
 <img width="391" alt="model6_optimization5_output" src="https://github.com/xoffvsg/deep-learning-challenge/assets/141395221/dc5b9f25-a04a-422d-9f06-90469b369dfc"> <br>
 
 
-A new notebook is saved as [AlphabetSoupCharity_Optimization4.ipynb](https://github.com/xoffvsg/deep-learning-challenge/blob/main/AlphabetSoupCharity_Optimization4.ipynb) to be ran in Colab and the model is saved as _AlphabetSoupCharity_Optimization5.h5_
+A new notebook is saved as [AlphabetSoupCharity_Optimization4.ipynb](https://github.com/xoffvsg/deep-learning-challenge/blob/main/AlphabetSoupCharity_Optimization4.ipynb) to be ran in Colab and the model is saved as <i>AlphabetSoupCharity_Optimization5.h5</i>
 
 ### Summary
-While we were not able to achieve an accuracy rate over 75%, our best model after additional preprocessing achieved 73.43% which 0.45 percentage point above the result obtained with the more basic approach used for the first model. A better accuracy result might be achievable by dropping the rows considered as statistical outliers (ASK_AMT), but we feel reluctant to remove them without confirming if the corresponding entries were either clerical mistakes or true proposals that might have to be handled separately.
+While we were not able to achieve an accuracy rate over 75%, our best model after additional preprocessing achieved 73.43% which is 0.45 percentage point above the result obtained with the more basic approach used for the first model. A better accuracy result might be achievable by dropping the rows considered as statistical outliers (ASK_AMT), but we feel reluctant to remove them without confirming if the corresponding entries were either clerical mistakes or true proposals that might have to be handled separately.
 
 
 
