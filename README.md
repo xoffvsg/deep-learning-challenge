@@ -97,8 +97,12 @@ Next, we will explore the effect of the scaling method applied to the last datas
 We  directly ran the Keras Tuner with the same constrains as for the fourth model, and the best model had an accuracy of  73.42%, which is only marginally better than the fourth model.<br>
 The notenook is saved as AlphabetSoupCharity_Optimization3.ipynb and the model as AlphabetSoupCharity_Optimization4.h5
 
+#### Sixth Model
+Lastly, we will rerun the Keras Tuner on the same dataset, but with only the activation functions Relu and Sigmoid, and with the max epoch set to 100. After 5h 12m 43s, the tuner identified a set of hyperparameters yielding an accuracy results of 73.43%.<br>
+The notenook is saved as AlphabetSoupCharity_Optimization4.ipynb and the model as AlphabetSoupCharity_Optimization5.h5
+
 ### Summary
-While we were not able to achieve an accuracy rate over 75%, our best model after additional preprocessing achieved 73.42% which 0.44 percentage point above the result obtained with the more basic approach used for the first model.
+While we were not able to achieve an accuracy rate over 75%, our best model after additional preprocessing achieved 73.43% which 0.45 percentage point above the result obtained with the more basic approach used for the first model.
 
 
 
