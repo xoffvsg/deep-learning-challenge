@@ -52,7 +52,7 @@ The evaluation of the model on the test data leads to an accuracy of 72.97%.<br>
 <img width="392" alt="model1_output" src="https://github.com/xoffvsg/deep-learning-challenge/assets/141395221/be23d066-4cf9-43e7-bf2c-e042345607c5">
 <br><br>
 Remark: The accuracy of the model on the training data was almost 74%, which is close enough to the accuracy obtained with the test data to eliminate the concern of model overfitting.
-The notebook is saved as [AlphabetSoupCharity.ipynb](https://github.com/xoffvsg/deep-learning-challenge/blob/main/AlphabetSoupCharity.ipynb) and the model as <i>AlphabetSoupCharity.h5</i>
+The notebook is saved as <a href="https://github.com/xoffvsg/deep-learning-challenge/blob/main/AlphabetSoupCharity.ipynb">AlphabetSoupCharity.ipynb</a> and the model as <i>AlphabetSoupCharity.h5</i>
 
 <br><br>
 
